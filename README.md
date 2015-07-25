@@ -45,7 +45,12 @@ Google close SSL socket for free accounts. I chage some functions and https requ
 
 Comparare with my_nerd_bot for openshift
 ------------------------------------------------
-This port just can sent text and has a dictionray instead of an external DataBase.
+- Has a better performance because of **webhook**.
+- Just sent text, in future fix this problem.
+- Has a dictionray and use `logging` instead of an external DataBase.
+
+
+
 
 
 
