@@ -9,6 +9,7 @@ list of CheatCode and ReservedCode in this port
 **CheatCodes:**
 - `گشنمه` or `گرسنمه` or `غذای ایرانی`: with this words bot return you name of an iranian delicious food.
 - `w <word>` or `wiki <wiki>` or `wiki_en`: return first lines of English wikipedia page of <word>.
+- `جوک` or `joke`: return a joke.
 
 **ReservedCode**
 - `سلام`
@@ -19,6 +20,7 @@ list of CheatCode and ReservedCode in this port
 - `/help`
 - `/start`
 - `a4fr`
+- `تشنمه`
 - ...
 
 
@@ -45,7 +47,13 @@ Google close SSL socket for free accounts. I chage some functions and https requ
 
 Comparare with my_nerd_bot for openshift
 ------------------------------------------------
-This port just can sent text and has a dictionray instead of an external DataBase.
+- Has a better performance because of **webhook**.
+- Just sent text, in future fix this problem.
+- Has a dictionray and use `logging` instead of an external DataBase.
+
+
+
+
 
 
 
