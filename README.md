@@ -49,4 +49,3 @@ All datas and logs stores in MongoDB. You can see this log in your web browser:
 - **List of ReservedCodes:** `http://<your-app>-<openshift-id>.rhcloud.com/report/reserved_code`
 
 
-
