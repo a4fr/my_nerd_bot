@@ -1,2 +1,0 @@
-beautifulsoup4>=4.4
-Flask>=0.10.1
