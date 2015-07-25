@@ -53,7 +53,10 @@ Comparare with my_nerd_bot for openshift
 
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d36cd97231b69f6f87cc662397a3ea5e359a46ec
 
 
 
