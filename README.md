@@ -1,6 +1,6 @@
 my_nerd_bot
 ------------
-`my_nerd_bot` is a cute telegram bot that help you in every where. It return first lines of given word wikipedia's page. Also it has some funny CheatCode. CheatCode is a word or an expression that has a special define for `my_nerd_bot` (eg. tell bot `گشنمه` of `w shiraz`).
+`my_nerd_bot` is a cute telegram bot that help you in every where. It return first lines of given word wikipedia's page. Also it has some funny CheatCode. CheatCode is a word or an expression that has a special define for `my_nerd_bot` (eg. tell bot `گشنمه` or `w shiraz`).
 Start chat with `my_nerd_bot` in telegram web version http://telegram.me/my_nerd_bot .
 
 
