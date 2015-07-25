@@ -1,11 +1,8 @@
 # -*- coding: utf-8 -*-
-import os
 import time
-import telebot
 import logging
-import nerd_config
 import nerd_database
-from nerd_module import wikipedia, database, iranian_food
+from nerd_module import wikipedia
 
 
 
@@ -65,7 +62,7 @@ class message_handler:
             return True
         return False
         
-            
+       
     '''
         Run cheat code
         ::tb <TeleBot> telegram_bot_handler 
@@ -75,13 +72,20 @@ class message_handler:
             * <str> string result or path of image
     '''
     def do_cheat_code(self, tb):
-        if self.cheat_cat == 'food':        return self.cheat_code_food(tb)
+        if self.cheat_cat == 'food':          return self.cheat_code_food(tb)
         elif self.cheat_cat == 'wiki_en':     return self.do_wiki(tb, lang='en')
+        elif self.cheat_cat == 'joke':        return self.cheat_code_joke(tb)
         else: return (-1, 'Cheat Code: No Function Defined!')
             
+    def cheat_code_joke(self, tb):
+        joke = nerd_database.joke().suggest()
+        tb.send_chat_action(self.message.from_user.id, 'typing')
+        tb.reply_to(self.message, joke)
+        return (1, joke)
+    
     
     def cheat_code_food(self, tb):
-        food = iranian_food().suggest()
+        food = nerd_database.iranian_foods().suggest()
         if food == 0 or food == None:    return (0, u'Cheat Code: %s' % self.cheat_cat)
         elif food == -1:                 return (-1, u'Cheat Code: %s' % self.cheat_cat)
         #there is a suggestion
