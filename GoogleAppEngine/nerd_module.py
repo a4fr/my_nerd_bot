@@ -80,7 +80,7 @@ class wikipedia:
         except wkp.exceptions.PageError as e:             return(0, u'Page Error')
         except wkp.exceptions.WikipediaException as e:    return(-1, u'Wikipedia Server Error') 
         except requests.exceptions.ConnectionError as e:  return(-2, u'Connection Error')
-        return(0, u'There is no Page')
+        except:                                           return(0, u'There is no Page')
     
     '''
         find image of wikipedia page
